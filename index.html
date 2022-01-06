@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>My Portofolio</title>
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm" data-aos="fade-down">
       <div class="container">
         <a class="navbar-brand" href="#">My Portofolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,9 +42,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="image/photo.jpeg" alt="Nurico Aditya Nugroho" width="200" height="200" class="rounded-circle" />
-      <h1 class="display-4">Nurico Aditya Nugroho</h1>
-      <p class="lead">Student</p>
+      <img src="image/photo.jpeg" alt="Nurico Aditya Nugroho" width="200" height="200" class="rounded-circle" data-aos="zoom-in"/>
+      <h1 class="display-4" data-aos="zoom-in">Nurico Aditya Nugroho</h1>
+      <p class="lead" data-aos="zoom-in">Student</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -58,15 +59,15 @@
     <section id="about">
       <div class="container">
         <div class="row text-center mb-2">
-          <div class="col">
+          <div class="col" data-aos="fade-down">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-offset="260">
             <p>Halo, perkenalkan nama saya Nurico Aditya Nugroho, umur 20 tahun, saya lahir di Surakarta pada tanggal 19 Maret 2001</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-offset="260">
             <p>Saya pindah ke Bandung pada tahun 2021 untuk bekerja dan melanjutkan kuliah di STMIK Mardira Indonesia</p>
           </div>
         </div>
@@ -77,9 +78,9 @@
 
     <!-- Profile -->
     <section id="profile">
-      <div class="container">
+      <div class="container" data-aos="fade-down">
         <div class="row text-center">
-          <div class="col">
+          <div class="col" data-aos="fade-down">
             <h2>Profile</h2>
           </div>
           <div class="mt-2">
@@ -107,14 +108,16 @@
     <section id="projects">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d3d3d3" fill-opacity="1" d="M0,192L60,192C120,192,240,192,360,170.7C480,149,600,107,720,101.3C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center" data-aos="fade-down">
           <div class="col">
             <h2>Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center mt-3">
           <div class="col-md-6 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img src="image/projectcv.png" class="card-img-top" alt="project1">
               <div class="card-body">
                 <p class="card-text">Project website berupa CV yang berisi tentang Biodata, Hobi, Pendidikan, dan Pengalaman Kerja</p>
@@ -123,7 +126,9 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img src="image/project2.png" class="card-img-top" alt="project2">
               <div class="card-body">
                 <p class="card-text">Project website kedua saya yang merupakan tugas besar mata kuliah WEB IOT 1</p>
@@ -139,23 +144,23 @@
     <section id="sosmed">
       <div class="container">
         <div class="row text-center">
-          <div class="col mt-5">
+          <div class="col mt-5" data-aos="fade-down">
             <h2>Social Media</h2>
           </div>
         </div>
         <div class="row justify-content-center mt-3">
           <div class="col-md-4 mb-3">
-            <div>
+            <div data-aos="fade-up">
               <a href="https://www.instagram.com/nuricoadit/"><img src="image/iglogo.png" width="100" height="100" class="mx-auto d-block" /></a>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class>
+            <div class data-aos="fade-up">
               <a href="https://id-id.facebook.com/shao.khan.982"><img src="image/fblogo.png" width="100" height="100" class="mx-auto d-block" /></a>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class>
+            <div class data-aos="fade-up">
               <a href="https://twitter.com/AdityaNurico"><img src="image/twitterlogo.png" width="100" height="100" class="mx-auto d-block" /></a>
             </div>
           </div>
@@ -172,5 +177,9 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
